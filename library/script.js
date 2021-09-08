@@ -50,6 +50,21 @@ const createBook = (e) => {
         .catch( (error) => console.error(error));
 }
 
+const readBook = () => {
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 const deleteBook = () => {
     const DELID = Number(DELETEID.value);
 
@@ -66,4 +81,4 @@ const deleteBook = () => {
 }
 
 submitButton.addEventListener('click',createBook);
-delBTN.addEventListener('click',deleteBook)
+delBTN.addEventListener('click',deleteBook);
