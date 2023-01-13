@@ -1,0 +1,8 @@
+.row {
+    background-color: gray;
+    outline: 1px dotted red;
+}
+
+[class^="col"] {
+    outline: 1px dotted red;
+}
