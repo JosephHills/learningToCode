@@ -1,1 +1,1 @@
-# A collection of trainig exercises.
+# A collection of training exercises.
