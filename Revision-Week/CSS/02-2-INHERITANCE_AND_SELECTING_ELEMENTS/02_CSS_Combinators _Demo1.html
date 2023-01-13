@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>L3_CSS_Combinators _Demo1</title>
+    <style>
+        em {
+            background-color: rgb(75, 233, 27)
+        }
+
+
+
+
+        /**  Descendent combinator: more specific*/
+        p em {
+            background-color: rgb(233, 27, 130)
+        }
+
+
+
+        /*Direct child*/
+        body>footer {
+            background-color: red;
+        }
+
+
+
+        /**Adjacent-sibling combinator*/
+
+        h1+p {
+            background-color: royalblue;
+        }
+
+
+        /**all siblings*/
+
+        h1~p {
+            background-color: black;
+        }
+
+
+        /*:hover -- pseduo class*/
+    </style>
+</head>
+
+<body>
+    <!--Demo 1: Descendent combinator-->
+
+    <h1 id="heading" class="font"> A <em>heading</em></h1>
+    <p class="font">A paragraph <em>with emphasis</em></p>
+
+    <!-- Demo 2: Child combinator : direct child  -->
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <article>
+        <h1>Article</h1>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <footer>Article footer</footer>
+    </article>
+
+    <footer>
+        Body footer
+    </footer>
+
+    <!-- Demo 3: Pseudo-classes -->
+    <p class="hover">hover me</p>
+
+
+    <!-- Demo 4: -->
+    <article>
+        <h1>Article</h1>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <blockquote>Quote</blockquote>
+        <p>Paragraph 3</p>
+        <footer>Article footer</footer>
+    </article>
+    <footer>Body footer</footer>
+
+</body>
+
+</html>

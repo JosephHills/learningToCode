@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>L3_CSS_beforeAndAfter_Demo5</title>
+    <style>
+        /*The ::before selector inserts
+         content before the content of the selected element(s).*/
+
+        p.start::before {
+            content: "Read this -- ";
+        }
+
+        p.end::after {
+            content: "More to come --";
+        }
+
+        p.start::first-letter {
+            font-size: 5em;
+        }
+
+        p::first-line {
+            background-color: #808080;
+        }
+
+        /* The ::selection pseudo-element was drafted for CSS Selectors Level 3,
+         but removed before the Recommendation status. So, at the moment, 
+        the ::selection pseudo-element is not in any specification.
+        NOTE: Some properties does not work in CHROME
+        */
+
+        ::selection {
+            color: red;
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p class="start">To stop the degradation of the planet's natural environment
+        and to build a future in which humans live in harmony with nature, by;
+        conserving the world's biological diversity, ensuring that the use of
+        renewable natural resources is sustainable, and promoting the reduction
+        of pollution and wasteful consumption.</p>
+    <p class="end"></p>
+
+</body>
+
+</html>

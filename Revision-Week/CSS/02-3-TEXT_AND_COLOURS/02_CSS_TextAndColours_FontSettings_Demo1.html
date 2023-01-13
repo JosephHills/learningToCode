@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>L4_CSSDemo3_FontSettings</title>
+    <style>
+        p.para1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 2em;
+            font-variant: small-caps;
+
+        }
+
+        /*The font shorthand property sets all the font properties in one declaration.
+      The properties that can be set, are (in order): 
+     "font-style font-variant font-weight font-size/line-height font-family"
+      The font-size and font-family values are required. 
+     If one of the other values are missing, the default values will be inserted, if any.     
+      Note: The line-height property sets the space between lines.*/
+        p.para2 {
+            font: italic small-caps bold 28px/2em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="para1">This is a paragraph.</p>
+
+    <p class="para2">This is another paragraph.</p>
+
+</body>
+
+</html>

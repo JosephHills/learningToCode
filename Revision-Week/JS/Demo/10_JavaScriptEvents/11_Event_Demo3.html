@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>L9_Event_Demo3</title>
+</head>
+
+<body>
+    <button id="b1" type="button" style="background-color:#ff0000">Who is this</button>
+
+    <script>
+        //In JavaScript "this" always refers to the “owner” of the function 
+        // we're executing, or rather, to the object that a function is a method of.
+
+        //When we define our function  in a page, 
+        //its owner is the page, or rather, the window object (or global object) of JavaScript. 
+        //An onclick property, though, is owned by the HTML element it belongs to.
+
+
+        //demo1
+        // "this" refer to the window object
+        function doSomething() {
+            this.style.color = "#cc0000";
+        }
+        console.dir(this);
+
+
+
+        //Demo 2
+
+        let b1 = document.querySelector("#b1");
+        b1.onclick = function () {
+            this.style.color = "#cc0000";
+            console.dir(this);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

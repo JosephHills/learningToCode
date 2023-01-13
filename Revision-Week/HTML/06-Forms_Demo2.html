@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <!-- HTML 4-->
+    <!-- Most form tags had to be within <form> container-->
+    <!--<form id="myForm" action="forms.htm" method="get">
+        <p>
+            <input type="submit" value="click!" />
+        </p>
+    </form>-->
+
+    <!-- HTML 5 form attribute-->
+    <!--Now can be placed anywhere and add a form attribute-->
+    <!--useful when form tags dynamically added-->
+    <!--logical from need to be broken up in the UI-->
+    <!--Not supported in all browser-->
+    <!--<p>
+       <input name="myVal" type="text" form="myForm" />
+    </p>-->
+
+
+    <!-- 13 New input type-->
+
+    <form>
+        <!-- Placeholder attribute-->
+        <!-- <p>
+            <input type="text" placeholder="I am a placeholder" />
+        </p> -->
+
+        <!-- Required attribute-->
+        <!-- <p>
+            Name: <input type="text" required />
+        </p> -->
+
+        <!-- Autofocus attribute-->
+        <!-- autofocus attribute: have field of a form to focus-->
+        <!-- <p>
+            <input autofocus="true" />
+        </p> -->
+
+        <!-- Email attribute-->
+        <!-- <p>
+            Email: <input type="email" required />
+        </p> -->
+
+        <!-- Web Address attribute-->
+        <!-- eg: http://www.qa.com-->
+        <!-- <p>
+            URL: <input type="url" required />
+        </p>
+        <p>
+            Phone: <input type="tel" />
+        </p> -->
+
+
+        <!-- Number input attribute-->
+        <!-- Number often need to be constrained by range-->
+        <!-- step: what value the contro enumerates by-->
+        <p>
+            Number: <input type="number" min="1" max="12" step="2" value="1" />
+        </p>
+
+
+        <!-- Range input type-->
+        <!-- Only IE10 displays the current slider value -->
+        <!--<p>
+            Range: <input />
+        </p>-->
+
+
+        <!-- Date input type-->
+        <!-- Only IE10 displays the current slider value -->
+        <!--<p>
+            Date: <input />
+        </p>-->
+        <!-- DEPRECATED:  Hour, minute, second, and fraction of a second based on UTC time zone-->
+        <!--<p>
+            Date/Time: <input type="datetime" />
+        </p>-->
+        <!-- Hour, minute, second, and fraction of a second based on UTC time zone-->
+        <!--<p>
+            Date/Time: <input type="datetime-local" />
+        </p>
+        <!-- Month and year, with no time zone-->
+        <!--<p>
+            Month/Year: <input type="month" />
+        </p>-->
+        <!-- Date with the year and a W followed by the week number, with no time zone-->
+        <!--<p>
+            Week/Year: <input type="week" />
+        </p>-->
+        <!-- time value with no time zone in 24-hour military format.-->
+        <!--<p>
+            Time: <input type="time" />
+        </p>-->
+
+        <!-- Search input type-->
+        <!--The search input type is used to designate the input as being used for search-->
+        <!--The results and autosave attributes shown above are not standard. -->
+        <!--In WebKit browsers you can add the non-standard results attribute to get a looking glass icon to click to see the latest searches-->
+        <!--Autosave: to keep them across page loads.-->
+        <!--<p>
+             <input type="search" results="5" autosave="a_unique_value">
+        </p>-->
+
+
+        <!-- Color input attribute-->
+        <!-- Not supported in IE-->
+        <!-- step: what value the contro enumerates by-->
+        <!--<p>
+            Color: <input/>
+        </p>-->
+
+        <!-- pattern input attribute-->
+        <!-- specifies a regular expression that the <input> element's value is checked against.-->
+        <!-- html5pattern.com-->
+        <!--<p>
+            Country code: <input type="text" name="country_code" 
+            >
+        </p>-->
+
+        <!-- Data List-->
+        <!--<br />Broswer choice: <input type="text"  name="browser" />
+        <datalist>
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Google Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>-->
+
+        <input type="submit" />
+    </form>
+
+
+
+
+</body>
+
+</html>

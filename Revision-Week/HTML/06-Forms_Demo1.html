@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>HTML 5 form</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Your Details</legend>
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" />
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" />
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <ul>
+                <li>
+                    <label for="course">Course</label>
+                    <select id="course" name="course">
+                        <option value="QAJAVSC">Javascript</option>
+                        <option value="QAHTML">HTML</option>
+                        <option value="QACSS">Javascript</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Delivery address</legend>
+            <ul>
+                <li>
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="5"></textarea>
+                </li>
+                <li>
+                    <label for="postcode">Post code</label>
+                    <input id="postcode" name="postcode" type="text" required>
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <input id="country" name="country" type="text" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Card details</legend>
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend>Card type</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" name="cardtype" id="visa" />
+                                <label for="visa">VISA</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="cardtype" id="amex" />
+                                <label for="amex">AmEx</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="cardtype" id="mastercard" />
+                                <label for="mastercard">Mastercard</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+                <li>
+                    <label for="cardnumber">Card number</label>
+                    <input id="cardnumber" name="cardnumber" type="text">
+                </li>
+                <li>
+                    <label for="secure">Security code</label>
+                    <input id="secure" name="secure" type="text">
+                </li>
+                <li>
+                    <label for="namecard">Name on card</label>
+                    <input id="namecard" name="namecard" type="text">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Preferred Communication</legend>
+            <ul>
+                <li>
+                    <label for="post">Post</label>
+                    <input type="checkbox" id="postchk" />
+                </li>
+                <li>
+                    <label for="emailchk">Email</label>
+                    <input type="checkbox" id="emailchk" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Order Details</legend>
+            <ul>
+                <li>
+                    <label for="deliverydate">Delivery date</label>
+                    <input type="date" name="deliverydate" id="deliverydate" id="deliverydate" />
+                </li>
+            </ul>
+        </fieldset>
+        <!--INPUT TYPE SUBMIT-->
+        <button type="submit">Buy it!</button>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

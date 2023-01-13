@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Task</title>
+</head>
+
+<body>
+    <div id="placeholder"></div>
+    <script>
+        // const colours = Array('red', 'green', 'blue', 'orange', 'lime', 'olive', 'black', 'yellow');
+        const colours = ['red', 'green', 'blue', 'orange', 'lime', 'olive', 'black', 'yellow'];
+        //Function Declaration
+        // function buildP(placeholder, num) {
+        // }
+
+        //Function expression
+        let buildP = function (placeholder, num) {
+            let i = 0;
+            do {
+                let p = document.createElement("p");
+                let text = document.createTextNode("Have you tried turning it off and back on again?");
+                p.appendChild(text);
+                placeholder.appendChild(p);
+                p.style.color = colours[parseInt(Math.random() * colours.length)];
+                i++;
+            } while (i < num);
+        };
+
+        buildP(document.querySelector("#placeholder"), 6);
+    </script>
+
+</body>
+
+</html>

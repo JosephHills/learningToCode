@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L4 Destructing Arrays Demo 10</title>
+</head>
+
+<body>
+    <script>
+        // Demo 4.10.1 - Destucturing Arrays
+        // Convenient method to extra data from objects and arrays
+
+        // let var1, var2, var3;
+
+        // [var1, var2, var3] = ["I", "love", "JavaScript"];
+        // console.log(var1);
+        // console.log(var2);
+        // console.log(var3);
+
+        // Demo 4.10.2 - Using default values
+        let [var4, var5 = 7] = [1];
+        console.log(var4);
+        console.log(var5);
+
+        // Demo 4.10.3 - Destructuring Objects - basic
+
+        // let myObject = { var6: "Salt", var7: "Pepper" };
+        // let { var6, var7 } = myObject;
+        // console.log(var6);
+        // console.log(var7);
+
+        // Demo 4.10.5 - Default values
+        let myObject = { var1: "Salt" };
+        let { var1 = "ketchup", var2 = "mustard" } = myObject;
+        console.log(var1);
+        console.log(var2);
+
+    </script>
+
+</body>
+
+</html>

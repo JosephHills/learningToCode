@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="01_Portfolio_Style.css" rel="stylesheet">
+</head>
+
+<!--TASK --
+
+Create my portfolio page (2 page)
+1) Using 7 structural element
+2) Home -- Intro of myself
+About -- Hobby, favourite things like movie, songs, food, pets
+3) Include external links to my favourite things
+4) Include an email link on every page (footer)
+5) Include back to the top link-->
+
+<!--TASK 2 --
+1) Include some images for your favorite things, make sure to have alt text for all.
+2) Create a numbered list for your favorite movies/anything else.
+3) Create a bullet for your favorite songs/anything else.-->
+
+<!--TASK 3 --
+1) In the about page, create a table with your skillset including the level. (at least 3 columns, as many rows as you want);
+or any other topics.
+2) Eg: No, Type of Skillset, Level (Beg, Inter, advanced)
+3) Make you use thead, tbody, tfoot and add a caption.
+-->
+
+<!-- TASK 4 --
+1) Create a contact me page.
+2) Create a form with using fieldset, legend, ul, li.
+3) Include title(use drop down box), name, tel, email, message box(multi-line box), date, submit button. (use HTML input
+5 elements where possible),
+4) Make field for name and email mandatory. -->
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Title</legend>
+            <ul>
+                <li>
+                    <label for="title">Title</label>
+                    <select id="title" name="title">
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="miss">Miss</option>
+                        <option value="ms">Ms</option>
+                        <option value="mx">Mx</option>
+                        <option value="other">Other</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" />
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" />
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" />
+                </li>
+                <li>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5"></textarea>
+                </li>
+                <li>
+                    <input type="submit" />
+                </li>
+            </ul>
+        </fieldset>
+
+
+</body>
+
+</html>

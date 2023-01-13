@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L4_Array_Demo2</title>
+</head>
+
+<body>
+    <script>
+        //Array Object methods
+        let d = new Array(5);
+        d[0] = "apple";
+        d[1] = "strawberries";
+        d[2] = "banana";
+        d[3] = "grapes";
+        d[4] = "durian";
+
+        console.log(d);
+        console.log(d.sort());
+        console.log(d.reverse());
+        console.log(d.join());
+
+        let e = d.join("-");
+        console.log(e);
+
+        // //Demo 4a: Push() method --
+        // //adds a new element to the end of the arrays
+
+        console.log(d.push("lemon"));
+        console.log(d);
+
+        // //Demo 4b: Pop() method --
+        // ////removes the last element from the end of the arrays
+
+        console.log(d.pop());
+        console.log(d);
+
+        // // Demo 5a: Unshift() --
+        // ////adds a new element to the beginning of the arrays
+        console.log(d.unshift("kiwi"));
+        console.log(d);
+
+        // // Demo 5b: Shift() --
+        // ////remove the first element from the beginning of the array
+        console.log(d.shift());
+        console.log(d);
+    </script>
+
+
+</body>
+
+</html>
