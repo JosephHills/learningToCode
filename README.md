@@ -1,1 +1,1 @@
-# VS-Code
+# A collection of training exercises.
