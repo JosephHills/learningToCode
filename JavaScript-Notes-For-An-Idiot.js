@@ -1,3 +1,5 @@
+// Changes
+
 // JavaScript Notes
 
 // Data Types
