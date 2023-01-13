@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L14EXTRA_WhyAsync_Demo9</title>
+</head>
+
+<body>
+
+    <script>
+         //   There’s a special syntax to work with promises in a more comfortable fashion, 
+        // called “async/await”. It’s surprisingly easy to understand and use. 
+        //It allows us to write asynchronous code in a synchronous manner
+        //The word “async” before a function means one simple thing:
+        // a function always returns a promise.
+        //So, async ensures that the function returns a promise, and wraps non-promises in it. 
+        //await allows us to wait for a Promise to resolve to a value.
+        //await will return the value only after the Promise is resolved.
+
+
+    </script>
+
+    <!--
+        Why Is It better?
+        1) Concise and clean
+        2) Error handling -- can use try/catch
+        3) More readable with conditional statement as use less arrow function
+        4)  Debugging - 
+                You can’t set breakpoints in arrow functions that return expressions 
+                (no body).
+                With async/await you don’t need arrow functions as much, and you can 
+                step through await calls exactly as if they were normal synchronous 
+                calls.
+        5) Error stacks -
+                The error stack returned from a promise chain gives no clue of where 
+                the error happened.
+                However, the error stack from async/await points to the function 
+                that contains the error          
+    -->
+
+
+    <!-- 
+Reference:
+https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9 -->
+    <!-- Reference2:
+https://dev.to/johnpaulada/synchronous-fetch-with-asyncawait -->
+</body>
+
+</html>

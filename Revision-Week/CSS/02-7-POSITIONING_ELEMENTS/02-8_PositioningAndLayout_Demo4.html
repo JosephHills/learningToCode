@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Float layout</title>
+    <style>
+        /*The float property specifies whether or not an element should float.
+
+         The clear property is used to control the behavior of floating elements.
+          In its simplest use, the float property can be used to wrap text around images.
+          Elements after a floating element will flow around it. To avoid this, use the clear property.
+          The clear property specifies on which sides of an element floating elements are not allowed to float:
+        */
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1em;
+        }
+
+        header,
+        section,
+        aside,
+        footer {
+            margin: 0.5em;
+            padding: 0.5em;
+            border: 5px dashed #000000;
+        }
+
+        header img {
+            float: right;
+        }
+
+        header h1 {
+            margin-right: 150px;
+        }
+
+        section {
+            float: right;
+            width: 60%;
+        }
+
+        aside {
+            float: left;
+            width: 60%;
+        }
+
+        footer {
+            clear: both;
+        }
+
+        footer>div {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="QA_logo_blue.png" width="80">
+        <h1>Heading</h1>
+    </header>
+    <section>
+        <h1>New Section</h1>
+        <p>
+            I never am really satisfied that I understand
+            anything; because, understand it well as I may,
+            my comprehension can only be an infinitesimal
+            fraction of all I want to understand about the
+            many connections and relations which occur to
+            me, how the matter in question was first thought
+            of or arrived at, etc., etc.
+        </p>
+    </section>
+    <aside>
+        Side bar
+    </aside>
+    <footer>
+        <div id="nav">
+            <a href="/l1">Link 1</a>
+            <a href="/l2">Link 2</a>
+        </div>
+        <div id="smallprint">Credits</div>
+    </footer>
+</body>
+
+</html>

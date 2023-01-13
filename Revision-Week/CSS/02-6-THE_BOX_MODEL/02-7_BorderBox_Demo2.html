@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Box sizing</title>
+    <style>
+        body {
+            width: 90%;
+            margin: 0 5%;
+            font-family: "Komika Hand", sans-serif;
+        }
+
+        div {
+            margin: 25px;
+        }
+
+        #one {
+            box-sizing: content-box;
+            width: 150px;
+            height: 150px;
+            border: 25px solid black;
+        }
+
+        #two {
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border: 25px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+</body>
+
+</html>

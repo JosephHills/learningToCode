@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>L11 Arrow Function</title>
+</head>
+<body>
+    <!--Demo 1-->
+    <button id="submitBtn">Click</button>
+
+    <!--Demo 2-->
+    <!-- <div>Click  me</div> -->
+
+    <script>
+       // Demo 1 - Arrow Functions clean up code!
+      //Allow for clear, concise code.
+      // ECMAScript 5
+
+       //let button = document.querySelector('#submitBtn')
+    
+    //    button.addEventListener('click', function() {
+    //     alert("I was clicked"); 
+    //    }, false);
+
+  
+
+
+
+
+        //Demo 2
+        //   Functions create a new context for this based on how it is called 
+        //   – i.e. if the function belongs to a DOM object and that function is called from 
+        //   the DOM object then this refers to the DOM object
+        //   Arrow functions are a convenient shorthand for writing an anonymous function 
+        //   that does not create a new context for this. Which can be very helpful, but also a gotcha when used in situations, 
+        //   such as event handlers
+
+         //let button = document.querySelector('#submitBtn')
+    
+        //    button.addEventListener('click', function() {
+        //     alert("I was clicked"); 
+        //     console.log(this);       //DOM Elemment
+        //    }, false);
+
+
+
+
+
+
+
+
+
+        
+    //Syntactically anonymous
+
+    //     It is important to note that arrow functions are anonymous, 
+    //     which means that they are not named.
+
+    //     This anonymity creates some issues:
+
+    //     1. Harder to debug
+    //     When you get an error, you will not be able to trace the name of the function 
+    //     or the exact line number where it occurred.
+
+    //    2. No self-referencing
+
+    //    If your function needs to have a self-reference at any point 
+    //    (e.g. recursion, event handler that needs to unbind), it will not work.
+
+//Reference: 
+//https://medium.freecodecamp.org/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

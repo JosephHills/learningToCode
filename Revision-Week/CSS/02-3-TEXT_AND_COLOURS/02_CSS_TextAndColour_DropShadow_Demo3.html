@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+    <title>Box Shadow</title>
+    <style type="text/css">
+        body {
+            font-size: 160%;
+            font-family: sans-serif;
+        }
+
+        div {
+            height: 100px;
+            width: 460px;
+            margin: 75px 50px;
+            padding: 1em;
+            float: left;
+        }
+
+        div.box-shadow {
+           : rgb(0, 0, 0) 0px 6px 6px 6px;
+        }
+        div.text-shadow {
+            : rgb(0, 0, 0) 0px 6px 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- color;  offset-x; offset-y; blur-radius; spread-radius -->
+
+    <!-- color; horizontal shadow (+ve bottom)(-ve top); vertical shadow (+ve right)(-ve left); -->
+
+
+    <div class="box-shadow">
+        <pre>box-shadow: rgb(0,0,0) 5px 5px</pre>
+    </div>
+
+    <!-- color;  offset-x; offset-y; blur-radius -->
+    <div class="text-shadow">
+        <pre>text-shadow: rgb(0,0,0) 0px 6px 6px 6px;</pre>
+    </div>
+
+
+</body>
+
+</html>

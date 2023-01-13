@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L7 Handing Errors Demo 2</title>
+</head>
+
+<body>
+    <script>
+        // The try statement lets you test a block of code for errors.
+        //The catch statement lets you handle the error.
+        //The throw statement lets you create custom errors.
+        //The finally statement lets you execute code, after try and catch,
+        //regardless of the result.
+
+        try {
+            let x = parseInt(prompt("Enter a number", ""));
+            if (isNaN(x)) {
+
+                let er = new Error();
+                er.message = "That wasn't a number";
+                throw er;
+            } else {
+                document.write(`${x} is a number. `);
+            }
+        } catch (er) {
+            //template literal - ECMAScript 2015
+            document.write(`Something went wrong: ${er.message}. `);
+            //String Concatenaton - ECMAScript 5
+            // document.write("Something went wrong:" + er.message);
+        } finally {
+            document.write("This will always run!!!");
+        }
+    </script>
+</body>
+
+</html>

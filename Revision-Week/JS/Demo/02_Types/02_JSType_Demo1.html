@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L2_JSType_Demo1</title>
+</head>
+
+<body>
+    <script>
+        // //Demo 1
+
+        // //Declaring variables
+        // // var, let and const
+        // // With and without assignment
+        // // Do not use implicit declaration
+
+        // a = 10 //implicit; DO NOT USE;
+        // console.log(a);
+
+        // var b;    //ECMAScript 5; explict; also undefined
+        // console.log(b);
+        // //a function-scoped variable whose declaration is hoisted and can lead to confusing code!
+        // //To be avoided now that we have let and const
+
+        // let c;//ECMAScript 6; block scope variable; recommended
+        // console.log(c);
+        // let d = 10;
+        // console.log(d);
+
+        // var b = 20;
+        // console.log(b);
+        // //This will give a syntax error, as variable b has already been defined
+        // let d = 30
+        // console.log(d);
+
+        // const E = 30; //the same as let, but must be initialised at declaration and can't be changed
+        //Uppercase for constants
+
+
+        //with assignment 
+
+
+        // the same as let, but must be initialised at declaration and cannot be changed
+        //UPPERCASE for constants
+
+
+        //What should you use? const where possible. let when you need it to change
+
+        // let _age = 10;
+        // let $age = 10;
+        // let name = "joseph"
+        // consloe.log(name);
+
+
+
+        //Demo 2 :  typeof operator
+
+
+
+
+
+        //Demo3: Null is not undefined
+        //Undefined is the value of an uninitialized letiable
+        //null is an explicit keyword that tells the runtime it is ‘empty’
+        //null is a value we can assign to represent objects that don’t exist
+
+        // let userID = null
+        // let password
+
+        // console.log(userID === password);
+
+
+    //Demo4: The Boolean type
+    //Boolean can hold two values – true and false
+    // When evaluated against numbers, you can run into issues
+    // false is evaluated as 0
+    // true can be evaluated to 1
+    // Vice-versa as well
+
+
+
+
+    //Demo 5: The Number Type
+    // let x1 = 34.00;
+    // let x2 = 34;
+    // console.log(x1);
+    // console.log(x2);
+
+
+
+    //Demo 6:  Examples of Number properties
+
+    // const m = Number.MAX_VALUE;
+    // console.log(m);
+
+    // const n = Number.MIN_VALUE;
+    // console.log(n);
+
+    // const p = Number.POSITIVE_INFINITY;
+    // console.log(p);
+
+    // const ne = Number.NEGATIVE_INFINITY;
+    // console.log (ne);
+
+    // let e = isNaN(124);  //NaN ;not a number
+    // console.log(e);
+
+    // let f = isNaN('Hello');
+    // console.log(f);
+
+     //Demo 7
+        // let num = 5.56789;
+        // let n = num.toExponential();
+        // console.log(n);
+
+        // let m = num.toFixed(2);
+        // console.log(m);
+
+    //Demo 8: The String Type
+    // let busNmum = "Bus 321";  // Using double quotes
+    // let busNmum = 'Bus 321';  // Using single quotes
+
+    // let answer = "It's alright";             //Single quote inside double quote
+    // let answer = "He is called 'Eddie'";    // Single quotes inside double quotes
+    // let answer = 'He is called "Eddie"';    // Double quotes inside single quotes
+
+    //Back-slash (\) used for escaping special characters
+    // let y = "We are the so-called \"Vikings\" from the north."
+
+
+
+    //Demo 9: String Concatenation and Interpolation
+        //Adding 2 (or more strings) is an expensive operation due to the memory manipulation required
+        //To concatenate a string the + operator is used
+
+        // let str1 = "5 + 3 = ";
+        // let value = 5 + 3;
+        // let str2 = str1 + value
+        // console.log(str2)        // 5 + 3 = 8
+
+    //Template literals (introduced in ES2015) allow for strings to be declared 
+    //with JavaScript expressions that are evaluated immediately using ${} notation
+
+
+
+
+
+    //Demo 10: String functions
+
+        // let str = "hello world, welcome to the universe.";
+        // let a = str.length;
+        // console.log(a);
+
+
+    //returns the index of (the position of) 
+    //the first occurrence of a specified text in a string
+
+
+
+
+    //returns the character at a specified index (position) in a string:
+
+
+
+
+
+
+    //The substring() method extracts the characters from a string, between two specified indices, 
+    //and returns the new sub string.
+    //This method extracts the characters in a string between "start" and "end", 
+    //not including "end" itself
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

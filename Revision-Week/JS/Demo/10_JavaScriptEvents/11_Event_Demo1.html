@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p id="p1">Accept.</p>
+    <p id="p2">Forgive.</p>
+    <p id="p3">Be Happy.</p>
+    <p id="p4">Be grateful.</p>
+    <p id="p5">Live in the moment.</p>
+
+    <p>
+        <img src="eoss1but.gif" id="img1" alt="button image 1" onmouseover="this.src='eoss2but.gif'"
+            onmouseout="this.src='eoss1but.gif'" />
+    </p>
+    <button id="b1" type="button">Click me</button>
+    <a href="http://www.qa.com" id="a1">Click me</a>
+
+    <script>
+        /*
+           EVENTS - SIMPLE PROGRAMATIC EVENTS
+           */
+
+        let a1 = document.getElementById("a1");
+        let b1 = document.getElementById("b1");
+
+        function doStuff() {
+            alert("stuff was done.")
+        }
+
+        function doAnotherStuff() {
+            alert("Another stuff was done.")
+        }
+
+        // Demo 1: Connecting directly to the function 
+        b1.onclick = doStuff;
+        a1.onclick = doAnotherStuff;
+
+        //Demo 2: Event Handler Function 
+        b1.onclick = function () {
+            doStuff();
+        };
+
+        a1.onclick = function (e) {
+            e.preventDefault();
+            doAnotherStuff();
+        };
+
+
+
+        //event.preventDefault() method stops 
+        //the default action of an element from happening.
+
+
+
+        //Demo 3: - Hooking up an array of events
+        //Skills challenge
+        //Select multiple paragraph
+        //Click on each paragraph will give me
+        //a pop message box saying "I love javascript"
+
+        let allP = document.querySelectorAll("p");
+        for (let i = 0; i < allP.length; i++) {
+            allP[i].onclick = function () {
+                alert("I love javaScript");
+            };
+        }
+
+    </script>
+
+</body>
+
+</html>
